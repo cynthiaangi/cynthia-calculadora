@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Convertendo números</title>
+</head>
+
+<body>
+        <header id="cabecalho">
+            <img class="logo" src="https://acdn.mitiendanube.com/stores/001/101/649/products/19756536_1375713569144832_4240607024256087711_n_13757135691448321-e2d02ae72775e595e015797476797557-480-0.png" alt="">
+                <h1 class="titulo">Cynthia's 계산자</h1>
+        </header>
+
+        <br><br>
+        <div class="container_principal">
+                <div class="container_numeral">
+                        <h2 class="titulo_conversor">Decimal</h2>
+                        <input id="input_decimal" type="text" placeholder="Valor em decimal">
+
+                <br><br>
+
+                        <h3>Converter para:</h3>
+                        <br>
+
+                        <b>Octal</b>
+                <br>
+                        <div class="container_valor" id="rec_oct_dec"></div>
+
+                <br><br>
+
+                        <b>Hexadecimal</b>
+                <br>
+                        <div class="container_valor" id="rec_hex_dec"></div>
+                        
+                <br><br>
+
+                        <b>Binário</b>
+                <br>
+                        <div class="container_valor" id="rec_bin_dec"></div>
+
+                <br><br>
+
+                        <button onclick="converter()">Converter Decimal</button>
+                </div>
+
+
+
+
+                <div class="container_numeral">
+                        <h2 class="titulo_conversor">Octal</h2>
+                        <input id="input_octal" type="text" placeholder="Valor em octal">
+
+                <br><br>
+
+                        <h3>Converter para:</h3>
+                        <br>
+
+                        <b>Decimal</b>
+                <br>
+                        <div class="container_valor" id="rec_dec_oct"></div>
+
+                <br><br>
+
+                        <b>Hexadecimal</b>
+                <br>
+                        <div class="container_valor" id="rec_hex_oct"></div>
+                        
+                <br><br>
+
+                        <b>Binário</b>
+                <br>
+                        <div class="container_valor" id="rec_bin_oct"></div>
+
+                <br><br>
+
+                        <button onclick="converterOctal()">Converter Octal</button>
+                </div>
+
+        </div>
+
+        <div class="container_principal">
+
+                <div class="container_numeral">
+                        <h2 class="titulo_conversor">Hexadecimal</h2>
+                        <input id="input_hexa" type="text" placeholder="Valor em hexadecimal">
+
+                <br><br>
+
+                        <h3>Converter para:</h3>
+                        <br>
+
+                        <b>Decimal</b>
+                <br>
+                        <div class="container_valor" id="rec_dec_hex"></div>
+
+                <br><br>
+
+                        <b>Octal</b>
+                <br>
+                        <div class="container_valor" id="rec_oct_hex"></div>
+                        
+                <br><br>
+
+                        <b>Binário</b>
+                <br>
+                        <div class="container_valor" id="rec_bin_hex"></div>
+
+                <br><br>
+
+                        <button onclick="converterHexa()">Converter Hexadecimal</button>
+                </div>
+
+
+
+                <div class="container_numeral">
+                        <h2 class="titulo_conversor">Binário</h2>
+                        <input id="input_bin" type="text" placeholder="Valor em binário">
+
+                <br><br>
+
+                        <h3>Converter para:</h3>
+                        <br>
+
+                        <b>Decimal</b>
+                <br>
+                        <div class="container_valor" id="rec_dec_bin"></div>
+
+                <br><br>
+
+                        <b>Hexadecimal</b>
+                <br>
+                        <div class="container_valor" id="rec_hex_bin"></div>
+                        
+                <br><br>
+
+                        <b>Octal</b>
+                <br>
+                        <div class="container_valor" id="rec_oct_bin"></div>
+
+                <br><br>
+
+                        <button onclick="converterBin()">Converter Binário</button>
+                </div>
+        </div>
+
+        <footer id="rodape">
+                <h3>Desenvolvido por Cynthia Angi</h3>
+        </footer>
+
+<script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+body {
+    background-image: url(https://wallpapers.com/images/featured/finger-heart-l9nad61e0elv0cqy.jpg);
+    background-position: 50%;
+    background-size: cover;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho {
+    background: linear-gradient(97.54deg,#92049c, #761b84, #510f5b);
+    margin: 0;
+    padding: 15px 0;
+    font-family: 'Playpen Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 5%;
+}
+
+.titulo {
+    margin-top: 1%;
+}
+
+.container_principal {
+    display: flex;
+    /* align-items: center; */
+    margin-left: -60px;
+    width: 100%;
+    margin-bottom: 7%;
+    justify-content: space-between;
+}
+
+.container_numeral {
+    background: rgba(195, 64, 204, 0.3);
+    padding: 5% 10% 5% 5%;
+    border-radius: 18px;
+    margin-left: 7%;
+}
+
+.titulo_conversor {
+    padding-bottom: 5%;
+}
+
+.container_valor{
+    display: block; 
+    background-color: #dcdcdc; 
+    border-radius: 5px; 
+    padding: 5px; 
+    color: rgb(0, 0, 0); 
+    width: 100%; 
+    height: 15px; 
+    font-weight: 500;
+    text-align: center;
+}
+
+input {
+    padding: 3% 10%;
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 18px;
+    padding: 5px 10px;
+    border: 5px outset #b21dbd;
+}
+
+button:hover {
+    border: 5px inset #b21dbd;
+}
+
+#rodape {
+    text-align: center;
+    background: linear-gradient(97.54deg,#510f5b, #761b84, #92049c);
+    margin: 0;
+    padding: 15px 0;
+    font-family: 'Playpen Sans', sans-serif;
+}
