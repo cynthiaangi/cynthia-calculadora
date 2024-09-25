@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-image: url(./background.jpg);
     background-position: 50%;
     background-size: cover;
@@ -32,8 +35,9 @@ body {
 }
 
 .container_principal {
-    display: flex;
-    /* align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 7%;
     margin-left: -3%;
     width: 100%;
     margin-bottom: 7%;
@@ -81,7 +85,31 @@ button:hover {
 #rodape {
     text-align: center;
     background: linear-gradient(97.54deg,#510f5b, #761b84, #92049c);
-    margin: 0;
+    margin-top: auto;
     padding: 15px 0;
     font-family: 'Playpen Sans', sans-serif;
 }
+
+@media screen and (max-width: 1100px){
+
+    .logo {
+        display: none;
+    }
+
+    .container_principal{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 25%;
+    }
+
+    
+}
+
+@media screen and (max-width: 899px) {
+    .container_principal{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
+
