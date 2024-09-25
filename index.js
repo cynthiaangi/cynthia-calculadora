@@ -7,7 +7,7 @@ function converter() {
         
     decimal = Number (input_decimal.value);     
     octal = decimal.toString(8);        
-    hexa = decimal.toString(16); 
+    hexa = decimal.toString(16).toUpperCase(); 
     binario = decimal.toString(2);    
 
     document.getElementById("rec_oct_dec").innerHTML = ` ${octal}`;
