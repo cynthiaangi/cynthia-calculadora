@@ -32,7 +32,7 @@ function converterOctal() {
 function converterHexa() {
 
     hexa = input_hexa.value;
-    decimal = parseInt(hexa, 16).toUpperCase();
+    decimal = parseInt(hexa, 16);
     octal = decimal.toString(8);
     binario = decimal.toString(2);
 
